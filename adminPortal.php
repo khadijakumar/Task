@@ -15,7 +15,7 @@
       if ($result->num_rows == 1) { 
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         
-        if($row['Access_Code'] == 755 && isset($_SESSION['name'])){
+        if($row['Access_Code'] == 755 || $row['Access_Code'] == 300  && isset($_SESSION['name'])){
             session_start();
             if (isset($userName)) { 
                $welcomeMessage = "<h2>&emsp;&emsp;&emsp;Welcome to admin, $userName.</h2>";
