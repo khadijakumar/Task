@@ -39,7 +39,7 @@
         
         $last_id = $conn->insert_id;
         
-        echo "Project Record insert status: $result record(s) inserted.<br>";
+         echo "$result project successfully created!";
         return $last_id;
     }
 
@@ -135,7 +135,7 @@
             </br>
             <h2>Add a Project</h2>
             <input type="text" name="name" placeholder = "Project Name" required></br></br>
-            <p>Task duration</p>
+            <p>Project deadline</p>
             <input type="date" name="date" placeholder="dd-mm-yyyy" value=""
             min="1997-01-01" max="2030-12-31" required></br></br>
             <button class="Rbtn">Submit Project</button>
