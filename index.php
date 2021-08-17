@@ -1,51 +1,9 @@
-<?php
-require_once("models/db-settings.php"); //Require DB connection
-
-//Retrieve settings
-$stmt = $mysqli->prepare("SELECT id, name, value
-	FROM ".$db_table_prefix."configuration");	
-$stmt->execute();
-$stmt->bind_result($id, $name, $value);
-
-while ($stmt->fetch()){
-	$settings[$name] = array('id' => $id, 'name' => $name, 'value' => $value);
-}
-$stmt->close();
-
-//Set Settings
-/*
-$emailActivation = $settings['activation']['value'];
-$mail_templates_dir = "models/mail-templates/";
-$websiteName = $settings['website_name']['value'];
-*/
-$websiteUrl = $settings['website_url']['value'];
-
-/*
-$uri = $_SERVER['REQUEST_URI'];
- 
-$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
- 
-$url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-*/
-
-/*
-$websiteLive = 'https://iqonnect.co.za/';
-$emailAddress = $settings['email']['value'];
-$resend_activation_threshold = $settings['resend_activation_threshold']['value'];
-$emailDate = date('dmy');
-$language = $settings['language']['value'];
-$template = $settings['template']['value'];
-*/
-
-/*
-if($websiteUrl != $url)
-{
-	header('Location: '.$websiteUrl);
-}
-*/
-
-include_once("models/header.php");
-?>
+<<!DOCTYPE html>
+<html>
+<head>
+   <title>Task</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <style>
 html, body {
   height: 100%;
