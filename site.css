@@ -1,0 +1,269 @@
+/******Home******/	    
+.navtop {
+	background-color: orange;
+	height: 3.75rem;
+	width: 100%;
+	border: 0;
+}
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 62.5rem;
+	height: 100%;
+}
+.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+}
+.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: #eaebed;
+	font-weight: normal;
+}
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+	color: #eaebed;
+}
+body.loggedin {
+	background-color: #f3f4f7;
+}
+.content {
+	width: 62.5rem;
+	margin: 0 auto;
+}
+.content h2 {
+	margin: 0;
+	padding: 1.563rem 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
+.content > p, .content > div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 1.563rem 0;
+	padding: 1.563rem;
+	background-color: #fff;
+}
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 0.938rem;
+}
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+a{
+       background-color: #FF8C00;
+       border: none;
+       color: white;
+       padding: 0.625rem 1.375rem;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 1rem;
+}
+a:hover {
+       background-color: lightblue;
+}
+
+
+table{
+    border-style: ridge;
+    width: 78%;
+    text-align:center;
+    position:absolute;
+    margin-left:8.625rem;
+}
+/******Add Project*******/
+.Recordbody{
+      overflow: hidden;
+      margin: 0px;
+      background-image: url("pexels-karolina-grabowska-4397907.jpg");
+      height:100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+     .Rcontainer {
+      width: 20rem;
+      height: 25rem;
+      display: block;
+      margin-left: 9.375rem;
+      margin-right: auto;
+      margin-top: 10.625rem;
+      margin-bottom: auto;
+      box-sizing: border-box;
+      border-color: gray;
+      border-style: solid;
+      border-radius: 2%;
+      text-align: center;
+      font-weight:900px;
+    }
+    .Rbtn{
+       background-color: #FF8C00;
+       border: none;
+       color: white;
+       padding: 0.625rem 1.25rem;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 15px;
+    }
+    
+    /*******Add Task*******/
+    .Tbody{
+      overflow: hidden;
+      margin: 5rem;
+      background-image: url("pexels-cup-of-couple-6177619.jpg");
+      height:100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .Tcontainer {
+      width: 20rem;
+      height: 25rem;
+      display: block;
+      margin-left: 0px;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: auto;
+      box-sizing: border-box;
+      border-color: gray;
+      border-style: solid;
+      border-radius: 2%;
+      text-align: center;
+      font-weight:900px;
+    }
+    .Tbtn{
+       background-color: #FF8C00;
+       border: none;
+       color: white;
+       padding: 0.625rem 1.375rem;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+    }
+    
+    /********Admin Portal********/
+    
+           .table{
+          border-style: ridge;
+          width: 50%;
+          text-align:center;
+          position:relative;
+          margin-left:8px;
+       }
+        .Aa{
+       background-color: #FF8C00;
+       border: none;
+       color: white;
+       padding: 8px 15px;
+       margin-top:3.125rem;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       }
+       .Aa:hover {
+        background-color: lightblue;
+       }
+        .Ah2{
+            text-align:left;
+            padding:3px 0;
+        }
+        .Ah5{
+            text-align:right;
+            padding:0px 0;
+        }
+        .Aheader{
+            display: block;
+            width:100%;
+            height:6.25rem;
+            background-color: orange;
+        }
+        .Abody{
+            background-color: #fcf3cf; 
+        }
+            
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+  background-color: #FFFFF0;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height:60%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+       
+/*************No Access Zone*************/
+.alert {
+  padding: 1.25rem;
+  background-color: #f44336;
+  color: white;
+  width:60%;
+  margin-left:250px;
+  text-align: center;
+  position:relative;
+  height:12.5rem;
+  margin-top:12.5rem;
+}
+.section{
+    margin-top:3.125rem;
+}
+.Na{
+    background-color: #FF8C00;
+    border: none;
+    color: white;
+    padding: 4px 5px;
+    text-align: center;
+    display: inline-block;
+    
+} 
+    
