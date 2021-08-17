@@ -35,7 +35,7 @@
             
             $projectId = getProjectID($conn);		
 			
-	        $query = "INSERT INTO `task` VALUES(9,'$projectId', '$task', '$progress')";
+	        $query = "INSERT INTO `task` (project\$id, name, status) VALUES('$projectId', '$task', '$progress')";
 	           
 	         if(mysqli_query($conn,$query)){
                 
